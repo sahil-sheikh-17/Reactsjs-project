@@ -1,0 +1,128 @@
+.strategies{
+    aside{
+        border-right:0.1rem solid var(--bs-border-color);
+        padding-right:0;
+        .searchSidebar{
+            position: relative;
+            background:var(--bs-bg-color);
+            padding:1rem;
+            .seachForm{
+                padding-left:4rem;
+            }
+            .searchIcon{
+                position: absolute;
+                left:2rem;
+                top:2rem;
+                cursor: pointer;
+                z-index:100;
+            }
+        }
+        .strategiesList{
+            list-style: none;
+            padding: 0;
+            li{
+               margin-bottom:1rem;
+               a{
+                display: flex;
+                img{
+                    margin-left:0.5rem;
+                }
+                &::after{
+                    flex-shrink: 0;
+                    width: var(--bs-accordion-btn-icon-width);
+                    height: var(--bs-accordion-btn-icon-width);
+                    margin-left: auto;
+                    content: "";
+                    background-image: var(--bs-accordion-btn-icon);
+                    background-repeat: no-repeat;
+                    background-size: var(--bs-accordion-btn-icon-width);
+                    transition: var(--bs-accordion-btn-icon-transition);
+                    transform: rotate(-90deg);
+                }
+               }
+            }
+        }
+    }
+    .optionHeader{
+        display: flex;
+        justify-content: space-between;
+        padding:1rem 1rem 1rem 2rem;
+        .leftHead{
+            display: flex;
+            align-items: center;
+            h5{
+                font-size: 1.4rem;
+            }
+            p{
+                margin: 0;
+                margin-left:1rem;
+            }
+        }
+        .rightBtn{
+            display: flex;
+            align-items: center;
+            div{
+                margin-right: 1rem;
+            }
+        }
+    }
+    .chartMain{
+        padding: 2rem;
+    }
+    .strategiesTable{
+        margin-top:2rem;
+        thead{
+            th{
+                background-color: var(--bs-black);
+                color: var(--bs-white);
+                &:empty{
+                    background-color: transparent;
+                }
+            }
+        }
+        tbody{
+            td{
+                border: 0;
+            }
+            &:nth-child(odd){
+                td{
+                  background-color:transparent;
+                }
+              }
+        }
+        .nobg{
+            background-color: transparent;
+        }
+        .lightbg{
+            background-color: var(--primary-light);
+        }
+        .lightred{
+            background-color:#FFE6E6 ;
+        }
+        .lightred2{
+            background-color: #FFDCDC;
+        }
+        .lightred3{
+            background-color: #FFD1D1;
+        }
+        .lightgreen{
+            background-color: #F5FFF7;
+        }
+        .lightgreen2{
+            background-color:#DCFFE3;
+        }
+        .lightgreen3{
+            background-color: #D1FFDA;
+        }
+        .lightgreen4{
+            background-color: #C0FFCD;
+        }
+        .lightgreen5{
+            background-color: #A4FBB2;
+        }
+        .lightgreen6{
+            background-color: #85EC95;
+        }
+
+    }
+}
